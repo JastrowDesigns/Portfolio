@@ -1,0 +1,98 @@
+body {
+	background-color: black;
+	font-family: bookman, arial-black;
+}
+
+#video {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	z-index: -2;
+}
+
+#background {
+	position: absolute;
+	top: 0px;
+	left: 25%;
+	background-color: black;
+	width: 50%;
+	height: 100%;
+	z-index: -1;
+}
+
+#scale {
+	position: absolute;
+	top: -70px;
+	left: 36%;
+	width: 300px;
+	z-index: 3;
+}
+
+#scaleNo {
+	position: absolute;
+	top: -70px;
+	left: 36%;
+	width: 300px;
+	z-index: 3;
+	display: none;
+}
+
+#scaleOv {
+	position: absolute;
+	top: -70px;
+	left: 36%;
+	width: 300px;
+	z-index: 3;
+	display: none;
+}
+
+#scaleOb {
+	position: absolute;
+	top: -70px;
+	left: 36%;
+	width: 300px;
+	z-index: 3;
+	display: none;
+}
+
+#scaleMo {
+	position: absolute;
+	top: -70px;
+	left: 36%;
+	width: 300px;
+	z-index: 3;
+	display: none;
+}
+
+#containInput {
+	width: 300px;
+	border: 2px solid white;
+	margin-top: 250px;
+	position: absolute;
+	left: 36%;
+	z-index: 3;
+	background-color: black;
+}
+
+.inputField {
+	margin-left: 50px;
+	margin-bottom: 15px;
+	z-index: 3;
+}
+
+.guy {
+	position: absolute;
+	top: 315px;
+	left: 75%;
+	width: 200px;
+	z-index: 3;
+}
+.guyResults {
+	position: absolute;
+	top: 280px;
+	left: 67%;
+	width: 700px;
+	z-index: 3;
+	display: none;
+}
