@@ -1,446 +1,645 @@
-body {
-	padding: 0px;
-	margin: 0px;
+@media only screen and (min-width: 600px) {
+/*@media only screen and (min-width: 10000px) {*/
+
+	body {
+		padding: 0px;
+		margin: 0px;
+		background-color: #0804ad;
+	}
+
+	@font-face {
+		src: url(../Fonts/LoveStoryRough.ttf);
+		font-family: 'LoveStoryRough';
+	}
+
+	#contain {
+		position: fixed;
+		left: 5vw;
+		width: 90vw;
+		height: 100vw;
+		overflow: hidden;
+	}
+
+	#header {
+		user-select: none;
+		width: 30vw;
+		position: absolute;
+		left: -40vw;
+		top: -2px;
+	/*	border-radius: 0px 0px 15px 15px;*/
+		border: 2px dotted white;
+	}	
+
+	#mobileHeader {
+		display: none;
+	}
+
+	#tvContain {
+		position: absolute;
+		bottom: -2px;
+		right: -70vw;
+		padding-top: 0px;
+		width: 65vw;
+		height: 90vh;
+		background-color: white;
+	/*	border-radius: 15px 15px 0px 0px;*/
+		border: 2px dotted #0804ad;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+	  	background-position: center;
+	  	z-index: 10;
+	}
+
+	#tv {
+		position: absolute;
+		top: 5vh;
+		left: 5vw;
+		width: 65vw;
+	}
+
+	#mobileMenu {
+		display: none;
+	}
+
+	.menuTitles {
+		display: inline;
+		width: 20vw;
+		padding: 10px;
+		margin-right: .5vw;
+		text-align: center;
+		user-select: none;
+		font-family: LoveStoryRough;
+		font-size: 2vw;
+		letter-spacing: 2.5;
+		color: #0804ad;
+		border-radius: 20px;
+	}
+
+	.menuTitles:hover {
+		cursor: pointer;
+		color: white;
+		background-color: #0804ad;
+	}
+
+	#tvBiography {
+		display: none;
+		position: absolute;
+		top: 20vh;
+		left: 20vh;
+		width: 45vw;
+		height: 300px;
+	}
+
+	p {	
+		text-align: center;
+		user-select: none;
+		margin: 12px 20px;
+		font-family: arial black;
+		font-size: 1.5vw;
+		color: #0804ad;
+		line-height: 1.35;
+	}
+
+	#tvGallery {
+		display: none;
+		position: absolute;
+		top: 15vh;
+		left: 15vw;
+		padding-top: 2vh;
+		width: 50vw;
+		height: 300px;
+	}
+
+	#tvEducation {
+		display: none;
+		position: absolute;
+		top: 15vh;
+		left: 3vw;
+		width: 90%;
+		height: 300px;
+	}
+
+	#info {
+		position: absolute;
+		top: 14vw;
+		left: -30vw;
+		width: 40vw;
+		height: 300px;
+	}
+
+	#infoTitle {
+		font-family: LoveStoryRough;
+		text-align: left;
+		color: white;
+		font-size: 3vw;
+	}
+
+	#info p {
+		text-align: left;
+		color: white;
+		font-size: 1.5vw;
+	}
+
+	#link {
+		color: #00A5EC;
+	}
+
+	#link:hover {
+		cursor: pointer;
+		color: white;
+	}
+
+	#clickBig {
+		position: absolute;
+		top: 5px;
+		left: 12vw;
+		text-align: center;
+		color: #0804ad;
+		font-size: 3vh;
+		font-family: arial black;
+		margin-bottom: 10vh;
+	}
+
+	.images {
+		display: inline-block;
+		width: 8vw;
+		height: auto;
+		margin: 2px 0px;
+		border: 5px solid white;
+	}
+
+	.images:hover {
+		cursor: pointer;
+		height: auto;
+		border: 5px solid #0804ad;
+	}
+
+	#bigImageClose {
+		display: none;
+		position: absolute;
+		top: 0vh;
+		right: 0vw;
+		font-family: LoveStoryRough;
+		font-size: 2vw;
+		color: #0804ad;
+		user-select: none;
+	}
+
+	#bigImageClose:hover {
+		cursor: pointer;
+	}
+
+	#ozAlts {
+		display: none;
+		position: absolute;
+		bottom: 15vh;
+		left: 62vw;
+		width: 30vw;
+	}
+
+	.ozAlts {
+		width: 5vw;
+	}
+
+	.ozAlts:hover {
+		cursor: pointer;
+		transform: rotate(20deg);
+	}
+
+	#lilLion {
+		transform: rotate(20deg);
+	}
+
+	#arrowL {
+		display: none;
+		position: absolute;
+		left: 1vw; 
+		top: 45vh;
+		width: 6vw;
+		transform: rotate(180deg);
+	}
+
+	#arrowL:hover {
+		cursor: pointer;
+		width: 7vw;
+		left: .5vw; 
+		top: 44vh;
+	}
+
+	#arrowR {
+		display: none;
+		position: absolute;
+		right: 1vw; 
+		top: 45vh;
+		width: 6vw;
+	}
+
+	#arrowR:hover {
+		cursor: pointer;
+		width: 7vw;
+		right: .5vw; 
+		top: 44vh;
+	}
+
+	#colorBTN {
+		display: none;
+		position: absolute;
+		bottom: 2vh;
+		left: 18vw;
+		width: 20vw;
+		height: 15vh;
+		background-image: url(../Images/ColorOff.png);
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+	  	background-position: center;	
+	}
+
+	#colorBTN:hover {
+		cursor: pointer;
+	}
+
+	#bcBTN {
+		display: none;
+		position: absolute;
+		bottom: 10vh;
+		right: 35vw;
+		font-family: LoveStoryRough;
+		font-size: 2vw;
+		color: #0804ad;
+	}
+
+	#bcBTN:hover {
+		cursor: pointer;
+		color: black;
+	}
+
+	#lhBTN {
+		display: none;
+		position: absolute;
+		bottom: 10vh;
+		right: 25vw;
+		font-family: LoveStoryRough;
+		font-size: 2vw;
+		color: #0804ad;
+	}
+
+	#lhBTN:hover {
+		cursor: pointer;
+		color: black;
+	}
+
+	#enBTN {
+		display: none;
+		position: absolute;
+		bottom: 10vh;
+		right: 17vw;
+		font-family: LoveStoryRough;
+		font-size: 2vw;
+		color: #0804ad;
+	}
+
+	#enBTN:hover {
+		cursor: pointer;
+		color: black;
+	}
+
+	.bookBTNS {
+		display: none;
+		color: #0804ad;
+	}
+
+	.bookBTNS:hover {
+		cursor: pointer;
+		color: black;
+	}
+
+	#cMock {
+		text-align: center;
+		font-family: LoveStoryRough;
+		font-size: 2vw;
+		position: absolute;
+		bottom: 8vh;
+		right: 70vw;
+	}
+
+	#cFlat {
+		text-align: center;
+		font-family: LoveStoryRough;
+		font-size: 2vw;
+		position: absolute;
+		bottom: 2vh;
+		right: 75vw;
+	}
+
+	#pMock {
+		text-align: center;
+		font-family: LoveStoryRough;
+		font-size: 2vw;
+		position: absolute;
+		bottom: 8vh;
+		right: 40vw;
+	}
+
+	#pFlat {
+		text-align: center;
+		font-family: LoveStoryRough;
+		font-size: 2vw;
+		position: absolute;
+		bottom: 2vh;
+		right: 45vw;
+	}
+
+	#mMock {
+		text-align: center;
+		font-family: LoveStoryRough;
+		font-size: 2vw;
+		position: absolute;
+		bottom: 8vh;
+		right: 10vw;
+	}
+
+	#mFlat {
+		text-align: center;
+		font-family: LoveStoryRough;
+		font-size: 2vw;
+		position: absolute;
+		bottom: 2vh;
+		right: 9vw;
+	}
+
+	.brochure {
+		display: none;
+	}
+
+	#brochure {
+		position: absolute;
+		bottom: 1vh;
+		left: 45vw;
+		font-family: arial black;
+		font-size: 2vw;
+		color: black;
+	}
+
+	#brochure:hover {
+		cursor: pointer;
+		color: black;
+	}
+
+	#outside {
+		position: absolute;
+		bottom: 1vh;
+		left: 10vw;
+		font-family: arial black;
+		font-size: 2vw;
+		color: #0804ad;
+	}
+
+	#outside:hover {
+		cursor: pointer;
+		color: black;
+	}
+
+	#inside {
+		position: absolute;
+		bottom: 1vh;
+		left: 80vw;
+		font-family: arial black;
+		font-size: 2vw;
+		color: #0804ad;
+	}
+
+	#inside:hover {
+		cursor: pointer;
+		color: black;
+	}
+
+	.boxes {
+		display: none;
+	}
+
+	.boxes:hover {
+
+	}
+
+	#bigFlat {
+		position: absolute;
+		bottom: 1vh;
+		left: 10vw;
+		font-family: arial black;
+		font-size: 2vw;
+		color: #0804ad;
+	}
+
+	#bigFlat:hover {
+		cursor: pointer;
+	}
+
+	#godivaMock {
+		position: absolute;
+		bottom: 1vh;
+		left: 45vw;
+		font-family: arial black;
+		font-size: 2vw;
+		color: black;
+	}
+
+	#godivaMock:hover {
+		cursor: pointer;
+	}
+
+	#smallFlat {
+		position: absolute;
+		bottom: 1vh;
+		left: 80vw;
+		font-family: arial black;
+		font-size: 2vw;
+		color: #0804ad;
+	}
+
+	#smallFlat:hover {
+		cursor: pointer;
+	}
+
+	.chaos {
+		display: none;
+		width: 5vw;
+		height: 5vw;
+		font-family: arial black;
+		font-size: 5vw;
+		border-radius: 50px;
+		border: 2px 2px #0804ad;
+		color: #0804ad;
+		text-align: center;
+	}
+
+	.chaos:hover {
+		cursor: pointer;
+		color: white;
+		background-color: #0804ad;
+	}
+
+	#chaos1 {
+		position: absolute;
+		bottom: 5vh;
+		right: 32.5vw;
+		color: white;
+		background-color: #0804ad;
+	}
+
+	#chaos2 {
+		position: absolute;
+		bottom: 5vh;
+		right: 22.5vw;
+	}
+
+	#chaos3 {
+		position: absolute;
+		bottom: 5vh;
+		right: 12.5vw;
+	}
+
+	.galleryCatagory {
+		display: none;
+		width: 5vw;
+		height: 5vw;
+		font-family: loveStoryRough;
+		font-size: 3vw;
+		border-radius: 50px;
+		border: 2px 2px #0804ad;
+		color: #0804ad;
+		text-align: center;
+	}
+
+	#posters{
+		position: relative;
+		top: -4vw;
+		left: -5vw;
+	}
+
+	#logos{
+		position: relative;
+		top: -4vw;
+		left: -5vw;
+	}
+
+	#other{
+		position: relative;
+		top: -4vw;
+		left: -5vw;
+	}
+
+	#clown {
+		display: none;
+		position: absolute;
+		top: 5vh;
+		left: 5vh;
+		width: 90vw;
+		height: 90vh;
+		user-select: none;
+	}
 }
 
-@font-face {
-	src: url(../Fonts/LoveStoryRough.ttf);
-	font-family: 'LoveStoryRough';
-}
 
-@keyframes spin {
-	0% {transform: rotate(20deg)}
-	12.5% {transform: rotate(110deg)}
 
-	12.5% {transform: rotate(110deg)}
-	25% {transform: rotate(110deg)}
+@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 10000px) {
+*/	body {
+		padding: 0px;
+		margin: 0px;
+		background-color: #0804ad;
+	}
 
-	25% {transform: rotate(110deg)}
-	37.5% {transform: rotate(200deg)}
+	#header {
+		display: none;
+	}
 
-	37.5% {transform: rotate(200deg)}
-	50% {transform: rotate(200deg)}
+	#info {
+		display: none;
+	}
 
-	50% {transform: rotate(200deg)}
-	62.5% {transform: rotate(290deg)}
+	#tvContain {
+		display: none;
+	}
 
-	62.5% {transform: rotate(290deg)}
-	75% {transform: rotate(290deg)}
+	#mobileHeader {
+		display: block;
+		user-select: none;
+		width: 102vw;
+		height: auto;
+		position: absolute;
+		left: -2vw;
+		top: -2px;
+	/*	border-radius: 0px 0px 15px 15px;*/
+		border: 2px dotted white;
+	}
 
-	75% {transform: rotate(290deg)}
-	87.5% {transform: rotate(20deg)}
+	#mobileMenu {
+		display: block;
+		position: absolute;
+		top: 45vw;
+		width: 100vw;
+		text-align: center;
+	}
 
-	87.5% {transform: rotate(20deg)}
-	100% {transform: rotate(20deg)}
-}
+	.menuTitles {
+		display: inline;
+		padding: 10vw;
+		text-align: center;
+		user-select: none;
+		font-family: LoveStoryRough;
+		font-size: 12vw;
+		letter-spacing: 2.5;
+		color: white;
+		border-radius: 20px;
+	}
 
-@keyframes spinALT {
-	0% {transform: rotate(0deg)}
-	100% {transform: rotate(360deg)}
-}
+	p {	
+		text-align: center;
+		user-select: none;
+		margin: 12px 20px;
+		font-family: arial black;
+		font-size: 4vw;
+		color: white;
+		line-height: 1.35;
+	}
 
-#contain {
-	position: fixed;
-	left: 50%;
-	margin-left: -400px;
-	width: 800px;
-	height: 600px;
-	overflow: hidden;
-}
+	#bioMobile {
+		display: none;
+	}
 
-#audio {
-	position: absolute;
-	top: 33px;
-	left: 26px;
-	width: 32px;
-	user-select: none;
-}
+	#galMobile {
+		display: none;
+	}
 
-#audio:hover {
-	background-color: rgba(255,255,255, 0.3);
-	cursor: pointer;
-}
+	.images {
+		display: inline-block;
+		width: 90vw;
+		margin-bottom: 3vh;
+		height: auto;
+		border: 5px solid white;
+	}
 
-#audio:active {
-	background-color: transparent;
-	position: absolute;
-	top: 38px;
-	left: 31px;
-	width: 22px;
-}
+	#eduMobile {
+		display: none;
+	}
 
-#background {
-	position: absolute;
-	left: -40px;
-	z-index: -10;
-	width: 122%;
-	height: auto;
-	user-select: none;
-}
+	#conMobile {
+		display: none;
+	}
 
-#headlineBox {
-	position: absolute;
-	top: -300px;
-	left: -40px;
-	width: 450px;
-	height: 100px;
-}
+	a {
+		color: #0804ad;
+		background-color: white;
+	}
 
-#header {
-	position: relative;
-	left: 33px;
-	top: 30px;
-	user-select: none;
-	width: 420px;
-}
+	#clown {
+		display: none;
+	}
 
-#tvContain {
-	position: absolute;
-	bottom: -400px;
-	left: 0px;
-	width: 600px;
-	height: 400px;
-}
+	#mobileClown {
+		width: 90vw;
+		height: 40vh;
+		user-select: none;
+	}
 
-#tvBackground {
-	left: 100px;
-	bottom: 0px;
-	position: absolute;
-	width: 400px;
-	height: 300px;
-}
-
-#gear1 {
-	user-select: none;
-	position: absolute;
-	left: 25px;
-	top: 25px;
-	width: 190px;
-	height: 190px; 
-	border-radius: 400px;
-	animation: spin 15s infinite linear;
-}
-
-#gear2 {
-	user-select: none;
-	position: absolute;
-	right: 55px;
-	top: 55px;
-	width: 110px;
-	height: 110px;
-	border-radius: 400px;
-	animation: spin 8s infinite linear;
-}
-
-#tv {
-	position: absolute;
-	left: 100px;
-	bottom: 0px;
-	width: 400px;
-	height: 300px;
-}
-
-#bio {
-	margin-top: 35px;
-}
-
-.menuTitles {
-	margin-left: 20%;
-	width: 60%;
-	height: 50px;
-	margin-top: 15px;
-	text-align: center;
-	user-select: none;
-	font-family: LoveStoryRough;
-	font-size: 40px;
-	letter-spacing: 2.5;
-	color: #237BD3;
-	border-radius: 20px;
-}
-
-.menuTitles:hover {
-	font-size: 45px;
-	cursor: pointer;
-	color: white;
-	background-color: #237BD3;
-}
-
-#tvBiography {
-	display: none;
-	position: absolute;
-	left: 100px;
-	bottom: 0px;
-	width: 400px;
-	height: 300px;
-}
-
-p {	
-	text-align: center;
-	user-select: none;
-	margin: 12px 20px;
-	font-family: arial black;
-	font-size: 16px;
-	color: #237BD3;
-	line-height: 1.35;
-}
-
-#tvGallary {
-	display: none;
-	position: absolute;
-	left: 100px;
-	bottom: 0px;
-	width: 400px;
-	height: 300px;
-}
-
-#tvEnlarge {
-	position: absolute;
-	top: 0px;
-	left: -700px;
-	width: 600px;
-	height: 600px;
-}
-
-#webEnlarge {
-	position: absolute;
-	top: -1000px;
-	left: 120px;
-	width: 1000px;
-	height: 600px;
-}
-
-#pages {
-	width: 100%;
-	background-color: #237BD3;
-}
-
-#designs {
-	background-color: white;
-	color: #237BD3;
-	margin-right: 30px;
-	margin-left: 50px;
-	width: 140px;
-}
-
-#designs:hover {
-	cursor: pointer;
-	background-color: white;
-	color: #237BD3;
-}
-
-#webpages {
-	width: 110px;
-}
-
-#webpages:hover {
-	cursor: pointer;
-	background-color: white;
-	color: #237BD3;
-}
-
-.gallaryToggle {
-	display: inline-block;
-	height: 22px;
-	text-align: center;
-	font-family: arial;
-	font-size: 20px;
-	color: white;
-	user-select: none;
-}
-
-#tvEducation {
-	display: none;
-	position: absolute;
-	left: 100px;
-	bottom: 0px;
-	width: 400px;
-	height: 300px;
-}
-
-#tvContact {
-	display: none;
-	position: absolute;
-	left: 100px;
-	bottom: 0px;
-	width: 400px;
-	height: 300px;
-}
-
-#link {
-	color: #00A5EC;
-}
-
-#link:hover {
-	cursor: pointer;
-	color: white;
-	background-color: #00A5EC;
-}
-
-.images {
-	display: inline-block;
-	width: 60px;
-	height: 60px;
-	margin: 10px 25px;
-	border: 5px solid #237BD3;
-}
-
-.images:hover {
-	cursor: pointer;
-	width: 60px;
-	height: 60px;
-	border: 5px solid black;
-}
-
-#image1 {
-	margin-top: 50px;
-	margin-left: 45px;
-}
-
-#image4 {
-	margin-left: 45px;
-}
-
-.webpages {
-	display: inline-block;
-	width: 60px;
-	height: 60px;
-	margin: 20px 25px;
-	border: 5px solid #237BD3;
-	background-color: red;
-}
-
-.webpages:hover {
-	cursor: pointer;
-	width: 60px;
-	height: 60px;
-	border: 5px solid black;
-}
-
-#web1 {
-	margin-top: 50px;
-	margin-left: 45px;
-}
-
-#webSmall {
-	position: absolute;
-	left: -40px;
-	top: 30px;
-	user-select: none;
-	margin-left: 20px;
-	font-family: arial black;
-	font-size: 10px;
-	z-index: 30;
-	background-color: white;
-}
-
-#webSmall:hover {
-	cursor: pointer;
-	color: white;
-	background-color: black;
-}
-
-#clickBig {
-	padding-top: 5px;
-	text-align: center;
-	user-select: none;
-	margin-top: 20px;
-	margin-left: 20px;
-	font-family: arial black;
-	font-size: 14px;
-	color: #237BD3;
-}
-
-#clickSmall {
-	position: absolute;
-	left: -40px;
-	top: 30px;
-	user-select: none;
-	margin-left: 20px;
-	font-family: arial black;
-	font-size: 10px;
-	z-index: 30;
-}
-
-#imagesBig {
-	position: absolute;
-	left: -30px;
-	top: 25px;
-	width: 550px;
-	height: 550px;
-	border: 2px solid white;
-}
-
-#webBig {
-	position: absolute;
-	left: -30px;
-	top: 25px;
-	width: 550px;
-	height: 550px;
-	border: 2px solid white;
-}
-
-#imagesBig:hover {
-	cursor: pointer;
-}
-
-#resetBtn:hover {
-	cursor: pointer;
-}
-
-#homeBtn {
-	position: absolute;
-	right: 0px;
-	bottom: -110px;
-	user-select: none;
-}
-
-#homeBtnText {
-	width: 200px;
-	transform: rotate(-200deg);
-}
-
-#homeBtnText:hover {
-	cursor: pointer;
-	width: 205px;
-}
-
-#gear3 {
-	user-select: none;
-	position: absolute;
-	right: -90px;
-	bottom: 20px;
-	width: 160px;
-	height: 160px;
-	border-radius: 400px;
-}
-
-#gear4 {
-	user-select: none;
-	position: absolute;
-	right: 10px;
-	bottom: -90px;
-	width: 160px;
-	height: 160px;
-	border-radius: 400px;
-}
-
-#rope {
-	position: absolute;
-	right: 116px;
-	top: 0px;
-	width: 10px;
-	height: 180px;
-	background-color: white;
-}
-
-#gear5 {
-	user-select: none;
-	position: absolute;
-	right: -133px;
-	top: 45px;
-	width: 260px;
-	height: 260px;
-	border-radius: 400px;
-	animation: spinALT 20s linear infinite;
-	animation-direction: reverse;
 }
