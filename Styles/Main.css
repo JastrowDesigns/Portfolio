@@ -87,6 +87,11 @@
 		height: 300px;
 	}
 
+	#bio {
+		color: white;
+		background-color: #0804ad;
+	}
+
 	p {	
 		text-align: center;
 		user-select: none;
