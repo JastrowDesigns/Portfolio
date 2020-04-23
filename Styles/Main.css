@@ -79,7 +79,7 @@
 	}
 
 	#tvBiography {
-		display: none;
+		display: block;
 		position: absolute;
 		top: 20vh;
 		left: 20vh;
