@@ -278,7 +278,7 @@
 
 	#gallary {
 		display: none;
-		width: 90vw;
+		width: 95vw;
 	}
 
 	#gallaryMenu {
@@ -345,7 +345,7 @@
 	}
 
 	.artDescription {
-		width: 70vh;
+		width: 90vw;
 		user-select: none;
 		font-size: 4vw;
 	}
