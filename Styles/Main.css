@@ -223,7 +223,7 @@
 	#homeBtn {
 		position: absolute;
 		top: -5vw;
-		left: 21vw;
+		left: 7vw;
 		text-align: center;
 		background-color: black;
 		color: white;
@@ -239,7 +239,7 @@
 	#gallaryBtn {
 		position: absolute;
 		top: -5vw;
-		left: 48vw;
+		left: 37vw;
 		text-align: center;
 		background-color: black;
 		color: white;
@@ -253,7 +253,7 @@
 	#contactBtn {
 		position: absolute;
 		top: -5vw;
-		left: 75vw;
+		left: 67vw;
 		text-align: center;
 		background-color: black;
 		color: white;
@@ -266,6 +266,7 @@
 
 
 	#myLogo {
+		display: none;
 		position: absolute;
 		top: 4vw;
 		left: 1.5vw;
@@ -332,7 +333,13 @@
 
 	.wideVideo {
 		float: center;
-		width: 70vh;
+		width: 100vw;
+	}
+
+	.bannerAd {
+		float: center;
+		height: 70vh;
+		user-select: none;
 	}
 
 	#logosBtn {
