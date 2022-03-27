@@ -1,648 +1,380 @@
 @media only screen and (min-device-width: 600px) {
-
 	body {
-		padding: 0px;
-		margin: 0px;
-		background-color: #0804ad;
+		background-image: url("../Images/BackgroundTexture.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		color: white;
+		background-color: black;
 	}
 
-	@font-face {
-		src: url(../Fonts/LoveStoryRough.ttf);
-		font-family: 'LoveStoryRough';
+	@keyframes open {
+  		from {top: -15vw;}
+  		to {top: 5vw;}
 	}
 
-	#contain {
+	@keyframes close {
+  		from {top: 5vw;}
+  		to {top: -15vw;}
+	}
+
+	#menu {
 		position: fixed;
-		left: 5vw;
-		width: 90vw;
-		height: 100vw;
-		overflow: hidden;
-	}
-
-	#header {
-		user-select: none;
-		width: 30vw;
-		position: absolute;
-		left: -40vw;
-		top: -2px;
-	/*	border-radius: 0px 0px 15px 15px;*/
-		border: 2px dotted white;
-	}	
-
-	#mobileHeader {
-		display: none;
-	}
-
-	#tvContain {
-		position: absolute;
-		bottom: -2px;
-		right: -70vw;
-		padding-top: 0px;
-		width: 65vw;
-		height: 90vh;
-		background-color: white;
-	/*	border-radius: 15px 15px 0px 0px;*/
-		border: 2px dotted #0804ad;
-		background-size: auto 100%;
-		background-repeat: no-repeat;
-	  	background-position: center;
-	  	z-index: 10;
-	}
-
-	#tv {
-		position: absolute;
-		top: 5vh;
-		left: 5vw;
-		width: 65vw;
-	}
-
-	#mobileMenu {
-		display: none;
-	}
-
-	.menuTitles {
-		display: inline;
-		width: 20vw;
-		padding: 10px;
-		margin-right: .5vw;
-		text-align: center;
-		user-select: none;
-		font-family: LoveStoryRough;
-		font-size: 2vw;
-		letter-spacing: 2.5;
-		color: #0804ad;
-		border-radius: 20px;
-	}
-
-	.menuTitles:hover {
-		cursor: pointer;
-		color: white;
-		background-color: #0804ad;
-	}
-
-	#tvBiography {
-		display: block;
-		position: absolute;
-		top: 20vh;
-		left: 20vh;
-		width: 45vw;
-		height: 300px;
-	}
-
-	#bio {
-		color: white;
-		background-color: #0804ad;
-	}
-
-	p {	
-		text-align: center;
-		user-select: none;
-		margin: 12px 20px;
-		font-family: arial black;
-		font-size: 1.5vw;
-		color: #0804ad;
-		line-height: 1.35;
-	}
-
-	#tvGallery {
-		display: none;
-		position: absolute;
-		top: 15vh;
-		left: 15vw;
-		padding-top: 2vh;
-		width: 50vw;
-		height: 300px;
-	}
-
-	#tvEducation {
-		display: none;
-		position: absolute;
-		top: 15vh;
-		left: 3vw;
-		width: 90%;
-		height: 300px;
-	}
-
-	#info {
-		position: absolute;
-		top: 14vw;
-		left: -30vw;
-		width: 40vw;
-		height: 300px;
-	}
-
-	#infoTitle {
-		font-family: LoveStoryRough;
-		text-align: left;
-		color: white;
-		font-size: 3vw;
-	}
-
-	#info p {
-		text-align: left;
-		color: white;
-		font-size: 1.5vw;
-	}
-
-	#link {
-		color: #00A5EC;
-	}
-
-	#link:hover {
-		cursor: pointer;
-		color: white;
-	}
-
-	#clickBig {
-		position: absolute;
-		top: 5px;
-		left: 12vw;
-		text-align: center;
-		color: #0804ad;
-		font-size: 3vh;
-		font-family: arial black;
-		margin-bottom: 10vh;
-	}
-
-	.images {
-		display: inline-block;
-		width: 8vw;
-		height: auto;
-		margin: 2px 0px;
-		border: 5px solid white;
-	}
-
-	.images:hover {
-		cursor: pointer;
-		height: auto;
-		border: 5px solid #0804ad;
-	}
-
-	#bigImageClose {
-		display: none;
-		position: absolute;
 		top: 0vh;
-		right: 0vw;
-		font-family: LoveStoryRough;
+		left: 0vw;
+		background-color: white;
+		width: 100%;
+		height: 5vw;
+		display: block;
+		z-index: 2;
+	}
+
+	.menuBtn {
+		text-align: center;
+		background-color: black;
+		color: white;
+		width: 11vw;
+		height: 3vw;
 		font-size: 2vw;
-		color: #0804ad;
+		display: inline-block;
+		border-radius: 25px;
+		padding-top: .5vw;
 		user-select: none;
 	}
 
-	#bigImageClose:hover {
+	.menuBtn:hover {
 		cursor: pointer;
+		background-color: grey;
+		color: black;
 	}
 
-	#ozAlts {
-		display: none;
-		position: absolute;
-		bottom: 15vh;
-		left: 62vw;
-		width: 30vw;
-	}
-
-	.ozAlts {
-		width: 5vw;
-	}
-
-	.ozAlts:hover {
-		cursor: pointer;
-		transform: rotate(20deg);
-	}
-
-	#lilLion {
-		transform: rotate(20deg);
-	}
-
-	#arrowL {
-		display: none;
-		position: absolute;
-		left: 1vw; 
-		top: 45vh;
-		width: 6vw;
-		transform: rotate(180deg);
-	}
-
-	#arrowL:hover {
-		cursor: pointer;
-		width: 7vw;
-		left: .5vw; 
-		top: 44vh;
-	}
-
-	#arrowR {
-		display: none;
-		position: absolute;
-		right: 1vw; 
-		top: 45vh;
-		width: 6vw;
-	}
-
-	#arrowR:hover {
-		cursor: pointer;
-		width: 7vw;
-		right: .5vw; 
-		top: 44vh;
-	}
-
-	#colorBTN {
-		display: none;
-		position: absolute;
-		bottom: 2vh;
-		left: 18vw;
-		width: 20vw;
-		height: 15vh;
-		background-image: url(../Images/ColorOff.png);
-		background-size: auto 100%;
+	#myLogo {
+		background-image: url("../Images/Logo.png");
+		background-size: contain;
 		background-repeat: no-repeat;
-	  	background-position: center;	
-	}
-
-	#colorBTN:hover {
-		cursor: pointer;
-	}
-
-	#bcBTN {
-		display: none;
 		position: absolute;
-		bottom: 10vh;
-		right: 35vw;
-		font-family: LoveStoryRough;
-		font-size: 2vw;
-		color: #0804ad;
-	}
-
-	#bcBTN:hover {
-		cursor: pointer;
-		color: black;
-	}
-
-	#lhBTN {
-		display: none;
-		position: absolute;
-		bottom: 10vh;
-		right: 25vw;
-		font-family: LoveStoryRough;
-		font-size: 2vw;
-		color: #0804ad;
-	}
-
-	#lhBTN:hover {
-		cursor: pointer;
-		color: black;
-	}
-
-	#enBTN {
-		display: none;
-		position: absolute;
-		bottom: 10vh;
-		right: 17vw;
-		font-family: LoveStoryRough;
-		font-size: 2vw;
-		color: #0804ad;
-	}
-
-	#enBTN:hover {
-		cursor: pointer;
-		color: black;
-	}
-
-	.bookBTNS {
-		display: none;
-		color: #0804ad;
-	}
-
-	.bookBTNS:hover {
-		cursor: pointer;
-		color: black;
-	}
-
-	#cMock {
-		text-align: center;
-		font-family: LoveStoryRough;
-		font-size: 2vw;
-		position: absolute;
-		bottom: 8vh;
-		right: 70vw;
-	}
-
-	#cFlat {
-		text-align: center;
-		font-family: LoveStoryRough;
-		font-size: 2vw;
-		position: absolute;
-		bottom: 2vh;
-		right: 75vw;
-	}
-
-	#pMock {
-		text-align: center;
-		font-family: LoveStoryRough;
-		font-size: 2vw;
-		position: absolute;
-		bottom: 8vh;
-		right: 40vw;
-	}
-
-	#pFlat {
-		text-align: center;
-		font-family: LoveStoryRough;
-		font-size: 2vw;
-		position: absolute;
-		bottom: 2vh;
-		right: 45vw;
-	}
-
-	#mMock {
-		text-align: center;
-		font-family: LoveStoryRough;
-		font-size: 2vw;
-		position: absolute;
-		bottom: 8vh;
-		right: 10vw;
-	}
-
-	#mFlat {
-		text-align: center;
-		font-family: LoveStoryRough;
-		font-size: 2vw;
-		position: absolute;
-		bottom: 2vh;
-		right: 9vw;
-	}
-
-	.brochure {
-		display: none;
-	}
-
-	#brochure {
-		position: absolute;
-		bottom: 1vh;
-		left: 45vw;
-		font-family: arial black;
-		font-size: 2vw;
-		color: black;
-	}
-
-	#brochure:hover {
-		cursor: pointer;
-		color: black;
-	}
-
-	#outside {
-		position: absolute;
-		bottom: 1vh;
-		left: 10vw;
-		font-family: arial black;
-		font-size: 2vw;
-		color: #0804ad;
-	}
-
-	#outside:hover {
-		cursor: pointer;
-		color: black;
-	}
-
-	#inside {
-		position: absolute;
-		bottom: 1vh;
-		left: 80vw;
-		font-family: arial black;
-		font-size: 2vw;
-		color: #0804ad;
-	}
-
-	#inside:hover {
-		cursor: pointer;
-		color: black;
-	}
-
-	.boxes {
-		display: none;
-	}
-
-	.boxes:hover {
-
-	}
-
-	#bigFlat {
-		position: absolute;
-		bottom: 1vh;
-		left: 10vw;
-		font-family: arial black;
-		font-size: 2vw;
-		color: #0804ad;
-	}
-
-	#bigFlat:hover {
-		cursor: pointer;
-	}
-
-	#godivaMock {
-		position: absolute;
-		bottom: 1vh;
-		left: 45vw;
-		font-family: arial black;
-		font-size: 2vw;
-		color: black;
-	}
-
-	#godivaMock:hover {
-		cursor: pointer;
-	}
-
-	#smallFlat {
-		position: absolute;
-		bottom: 1vh;
-		left: 80vw;
-		font-family: arial black;
-		font-size: 2vw;
-		color: #0804ad;
-	}
-
-	#smallFlat:hover {
-		cursor: pointer;
-	}
-
-	.chaos {
-		display: none;
-		width: 5vw;
-		height: 5vw;
-		font-family: arial black;
-		font-size: 5vw;
-		border-radius: 50px;
-		border: 2px 2px #0804ad;
-		color: #0804ad;
-		text-align: center;
-	}
-
-	.chaos:hover {
-		cursor: pointer;
-		color: white;
-		background-color: #0804ad;
-	}
-
-	#chaos1 {
-		position: absolute;
-		bottom: 5vh;
-		right: 32.5vw;
-		color: white;
-		background-color: #0804ad;
-	}
-
-	#chaos2 {
-		position: absolute;
-		bottom: 5vh;
-		right: 22.5vw;
-	}
-
-	#chaos3 {
-		position: absolute;
-		bottom: 5vh;
-		right: 12.5vw;
-	}
-
-	.galleryCatagory {
-		display: none;
-		width: 5vw;
-		height: 5vw;
-		font-family: loveStoryRough;
-		font-size: 3vw;
-		border-radius: 50px;
-		border: 2px 2px #0804ad;
-		color: #0804ad;
-		text-align: center;
-	}
-
-	#posters{
-		position: relative;
-		top: -4vw;
-		left: -5vw;
-	}
-
-	#logos{
-		position: relative;
-		top: -4vw;
-		left: -5vw;
-	}
-
-	#other{
-		position: relative;
-		top: -4vw;
-		left: -5vw;
-	}
-
-	#clown {
-		display: none;
-		position: absolute;
-		top: 5vh;
-		left: 5vh;
-		width: 90vw;
-		height: 90vh;
+		top: 1.1vw;
+		left: 1vw;
+		width: 7vw;
+		z-index: 100;
 		user-select: none;
 	}
-}
 
-
-
-@media only screen and (max-device-width: 600px) {
-	body {
-		padding: 0px;
-		margin: 0px;
-		background-color: #0804ad;
-	}
-
-	#header {
-		display: none;
-	}
-
-	#info {
-		display: none;
-	}
-
-	#tvContain {
-		display: none;
-	}
-
-	#mobileHeader {
-		display: block;
-		user-select: none;
-		width: 102vw;
-		height: auto;
+	#homeBtn {
 		position: absolute;
-		left: -2vw;
-		top: -2px;
-	/*	border-radius: 0px 0px 15px 15px;*/
-		border: 2px dotted white;
+		top: -1.3vw;
+		left: 10vw;
+		color: grey;
 	}
 
-	#mobileMenu {
-		display: block;
+	#gallaryBtn {
 		position: absolute;
-		top: 45vw;
-		width: 100vw;
-		text-align: center;
+		top: -1.3vw;
+		left: 22vw;
 	}
 
-	.menuTitles {
-		display: inline;
+	#contactBtn {
+		position: absolute;
+		top: -1.3vw;
+		left: 34vw;
+	}
+
+	#home {
+		height: 50vh;
 		padding: 10vw;
 		text-align: center;
-		user-select: none;
-		font-family: LoveStoryRough;
-		font-size: 12vw;
-		letter-spacing: 2.5;
-		color: white;
-		border-radius: 20px;
+		font-size: 2vw;
 	}
 
-	p {	
-		text-align: center;
-		user-select: none;
-		margin: 12px 20px;
-		font-family: arial black;
-		font-size: 4vw;
-		color: white;
-		line-height: 1.35;
-	}
-
-	#bioMobile {
+	#gallary {
 		display: none;
+		padding-left: 5vw;
+		font-size: 2vw;
 	}
 
-	#galMobile {
-		display: none;
+	#gallaryMenu {
+		position: fixed;
+		top: -15vw;
+		left: 0px;
+		padding-left: 2vw;
+		padding-right: 2vw;
+		font-size: 2vw;
+		background-color: grey;
+		border-radius: 0px 0px 20px 0px;
+		z-index: 1;
 	}
 
-	.images {
+	.gallaryMenuBtn {
 		display: inline-block;
-		width: 90vw;
-		margin-bottom: 3vh;
-		height: auto;
-		border: 5px solid white;
 	}
 
-	#eduMobile {
-		display: none;
+	.gallaryMenuBtn:hover {
+		cursor: pointer;
+		color: black;
 	}
 
-	#conMobile {
-		display: none;
+	.galMenuOpen {
+		animation-iteration-count: 1;
+		animation: open 2s;
+		animation-fill-mode: forwards;
 	}
 
-	a {
-		color: #0804ad;
-		background-color: white;
+	.galMenuClose {
+		animation-iteration-count: 1;
+		animation: close 2s;
+		animation-fill-mode: forwards;
 	}
 
-	#clown {
-		display: none;
-	}
-
-	#mobileClown {
-		width: 90vw;
-		height: 40vh;
+	.galImg {
+		float: center;
+		height: 70vh;
 		user-select: none;
 	}
 
+	.wideVideo {
+		float: center;
+		height: 70vh;
+	}
+
+	#logosBtn {
+		color: black;
+	}
+
+	#logos {
+		display: block;
+	}
+
+	#posters {
+		display: none;
+	}
+
+	#albumArt {
+		display: none;
+	}
+
+	.artDescription {
+		width: 70vh;
+		user-select: none;
+	}
+
+	#videos {
+		display: none;
+	}
+
+	#contact{
+		display: none;
+		height: 50vh;
+		padding: 10vw;
+		text-align: center;
+		font-size: 2vw;
+	}
+
+	#bigText {
+		font-size: 2.5vw;
+		font-weight: bold;"
+	}
+
+
+	#links {
+		text-align: center;
+		position: fixed;
+		bottom: 0vh;
+		left: 0px;
+		background-color: rgba(0, 0, 0, .7);
+		width: 100vw;
+		height: 10vh;
+	}
+}
+@media only screen and (max-device-width: 600px) {
+	body {
+		background-image: url("../Images/BackgroundTexture.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		color: white;
+		background-color: black;
+	}
+
+	@keyframes open {
+  		from {top: 0vw;}
+  		to {top: 15vw;}
+	}
+
+	@keyframes close {
+  		from {top: 15vw;}
+  		to {top: 0vw;}
+	}
+
+	#menu {
+		position: fixed;
+		top: 0vh;
+		left: 0vw;
+		background-color: white;
+		width: 100%;
+		height: 15vw;
+		display: block;
+		z-index: 2;
+	}
+
+	#homeBtn {
+		position: absolute;
+		top: -5vw;
+		left: 21vw;
+		text-align: center;
+		background-color: black;
+		color: white;
+		width: 25vw;
+		height: 16vw;
+		line-height: 17vw;
+		font-size: 4vw;
+		display: inline-block;
+		color: grey;
+	}
+
+
+	#gallaryBtn {
+		position: absolute;
+		top: -5vw;
+		left: 48vw;
+		text-align: center;
+		background-color: black;
+		color: white;
+		width: 25vw;
+		height: 16vw;
+		line-height: 17vw;
+		font-size: 4vw;
+		display: inline-block;
+	}
+
+	#contactBtn {
+		position: absolute;
+		top: -5vw;
+		left: 75vw;
+		text-align: center;
+		background-color: black;
+		color: white;
+		width: 25vw;
+		height: 16vw;
+		line-height: 17vw;
+		font-size: 4vw;
+		display: inline-block;
+	}
+
+
+	#myLogo {
+		position: absolute;
+		top: 4vw;
+		left: 1.5vw;
+		width: 18vw;
+		z-index: 100;
+	}
+
+	#home {
+		height: 50vh;
+		padding: 14vw 5vw;
+		text-align: center;
+		font-size: 4vw;
+	}
+
+	#gallary {
+		display: none;
+		padding-left: 5vw;
+	}
+
+	#gallaryMenu {
+		position: fixed;
+		top: 5vw;
+		left: 0px;
+		padding-left: 2vw;
+		padding-right: 2vw;
+		font-size: 3.5vw;
+		width: 100vw;
+		background-color: grey;
+		z-index: 1;
+	}
+
+	.galMenuOpen {
+		animation-iteration-count: 1;
+		animation: open 2s;
+		animation-fill-mode: forwards;
+	}
+
+	.galMenuClose {
+		animation-iteration-count: 1;
+		animation: close 2s;
+		animation-fill-mode: forwards;
+	}
+
+	.gallaryMenuBtn {
+		display: inline-block;
+		margin-right: 3vw;
+		margin-left: 3vw;
+	}
+
+	.gallaryMenuBtn:hover {
+		cursor: pointer;
+		color: black;
+	}
+
+	.galImg {
+		float: center;
+		height: 70vh;
+		user-select: none;
+	}
+
+	.wideVideo {
+		float: center;
+		width: 70vh;
+	}
+
+	#logosBtn {
+		color: black;
+		z-index: 300;
+	}
+
+	#logos {
+		display: block;
+	}
+
+	#posters {
+		display: none;
+	}
+
+	#albumArt {
+		display: none;
+	}
+
+	.artDescription {
+		width: 70vh;
+		user-select: none;
+		font-size: 4vw;
+	}
+
+	#videos {
+		display: none;
+	}
+
+	#contact{
+		display: none;
+		height: 50vh;
+		margin: 20vw 10vw;
+		text-align: center;
+		font-size: 5vw;
+	}
+
+	#bigText {
+		font-size: 7vw;
+		font-weight: bold;"
+	}
+
+	#links {
+		text-align: center;
+		position: fixed;
+		bottom: 0vh;
+		left: 0px;
+		background-color: rgba(0, 0, 0, .7);
+		width: 100vw;
+		height: 10vh;
+		font-size: 4vw;
+	}
 }
