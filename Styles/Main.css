@@ -278,7 +278,7 @@
 
 	#gallary {
 		display: none;
-		width: 100vw;
+		width: 90vw;
 	}
 
 	#gallaryMenu {
@@ -318,7 +318,7 @@
 
 	.galImg {
 		float: center;
-		width: 100vw;
+		width: 95vw;
 		user-select: none;
 	}
 
