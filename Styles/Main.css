@@ -86,6 +86,10 @@
 		font-size: 2vw;
 	}
 
+	#homeLogo {
+		width: 40vw;
+	}
+
 	#gallary {
 		display: none;
 		padding-left: 5vw;
@@ -274,6 +278,10 @@
 		padding: 14vw 5vw;
 		text-align: center;
 		font-size: 4vw;
+	}
+
+	#homeLogo {
+		width: 90vw;
 	}
 
 	#gallary {
