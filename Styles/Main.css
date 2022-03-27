@@ -288,6 +288,7 @@
 	#gallary {
 		display: none;
 		width: 95vw;
+		padding-left: 2vw;
 	}
 
 	#gallaryMenu {
