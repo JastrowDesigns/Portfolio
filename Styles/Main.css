@@ -83,7 +83,7 @@
 		height: 50vh;
 		padding: 10vw;
 		text-align: center;
-		font-size: 2vw;
+		font-size: 1.8vw;
 	}
 
 	#homeLogo {
@@ -98,11 +98,11 @@
 
 	#gallaryMenu {
 		position: fixed;
-		top: -15vw;
+		top: -20vw;
 		left: 0px;
 		padding-left: 2vw;
 		padding-right: 2vw;
-		font-size: 2vw;
+		font-size: 1.2vw;
 		background-color: grey;
 		border-radius: 0px 0px 20px 0px;
 		z-index: 1;
@@ -140,29 +140,52 @@
 		height: 70vh;
 	}
 
-	#logosBtn {
+	.logosBtn {
 		color: black;
 	}
 
-	#logos {
-		display: block;
+	.logos {
+        display: flex;
+        align-items: center;
 	}
 
-	#posters {
-		display: none;
+	.logos img {
+		margin-right: 5vw;
 	}
 
-	#albumArt {
+	.posters {
 		display: none;
+        align-items: center;
+	}
+
+	.posters img{
+		margin-right: 5vw;
+	}
+
+	.albumArt {
+		display: none;
+        align-items: center;
+	}
+
+	.albumArt img {
+		margin-right: 5vw;
 	}
 
 	.artDescription {
+		max-width: 600px;
 		width: 70vh;
 		user-select: none;
 	}
 
-	#videos {
-		display: none;
+	.videoDescription {
+		width: 70vw;
+		user-select: none;
+	}
+
+	.videos {
+		display: none;		
+		width: 30vw;
+        align-items: center;
 	}
 
 	#contact{
