@@ -54,6 +54,12 @@ document.getElementById('logosBtn').onclick = function(){
 		videos[i].style.display = "none";
 	}
 	document.getElementById('videosBtn').style.color = "white";
+
+	var ux = document.getElementsByClassName('ux');
+	for (var i = 0; i < videos.length; i++) {
+		ux[i].style.display = "none";
+	}
+	document.getElementById('uxBtn').style.color = "white";
 };
 
 
@@ -82,6 +88,12 @@ document.getElementById('postersBtn').onclick = function(){
 		videos[i].style.display = "none";
 	}
 	document.getElementById('videosBtn').style.color = "white";
+
+	var ux = document.getElementsByClassName('ux');
+	for (var i = 0; i < videos.length; i++) {
+		ux[i].style.display = "none";
+	}
+	document.getElementById('uxBtn').style.color = "white";
 };
 
 
@@ -110,6 +122,12 @@ document.getElementById('albumArtBtn').onclick = function(){
 		videos[i].style.display = "none";
 	}
 	document.getElementById('videosBtn').style.color = "white";
+
+	var ux = document.getElementsByClassName('ux');
+	for (var i = 0; i < videos.length; i++) {
+		ux[i].style.display = "none";
+	}
+	document.getElementById('uxBtn').style.color = "white";
 };
 
 
@@ -138,6 +156,12 @@ document.getElementById('videosBtn').onclick = function(){
 		videos[i].style.display = "block";
 	}
 	document.getElementById('videosBtn').style.color = "black";
+
+	var ux = document.getElementsByClassName('ux');
+	for (var i = 0; i < videos.length; i++) {
+		ux[i].style.display = "none";
+	}
+	document.getElementById('uxBtn').style.color = "white";
 };
 
 
