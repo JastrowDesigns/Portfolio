@@ -10,6 +10,7 @@ document.getElementById('homeBtn').onclick = function(){
 
 document.getElementById('gallaryBtn').onclick = function(){
 	document.getElementById('gallaryMenu').classList.add("GalMenuOpen");
+	document.getElementById('logosBtn').style.color = "black";
 	document.getElementById('home').style.display = "none";
 	document.getElementById('homeBtn').style.color = "white";
 	document.getElementById('gallary').style.display = "block";
@@ -137,4 +138,38 @@ document.getElementById('videosBtn').onclick = function(){
 		videos[i].style.display = "block";
 	}
 	document.getElementById('videosBtn').style.color = "black";
+};
+
+
+document.getElementById('uxBtn').onclick = function(){
+	window.scrollTo(0,0);
+	var logos = document.getElementsByClassName('logos');
+	for (var i = 0; i < logos.length; i++) {
+	  logos[i].style.display = "none";
+	}
+	document.getElementById('logosBtn').style.color = "white";
+
+	var albumArts = document.getElementsByClassName('albumArt');
+	for (var i = 0; i < albumArts.length; i++) {
+		albumArts[i].style.display = "none";
+	}
+	document.getElementById('albumArtBtn').style.color = "white";
+
+	var posters = document.getElementsByClassName('posters');
+	for (var i = 0; i < posters.length; i++) {
+		posters[i].style.display = "none";
+	}
+	document.getElementById('postersBtn').style.color = "white";
+
+	var videos = document.getElementsByClassName('videos');
+	for (var i = 0; i < videos.length; i++) {
+		videos[i].style.display = "none";
+	}
+	document.getElementById('videosBtn').style.color = "white";
+
+	var ux = document.getElementsByClassName('ux');
+	for (var i = 0; i < videos.length; i++) {
+		ux[i].style.display = "flex";
+	}
+	document.getElementById('uxBtn').style.color = "black";
 };

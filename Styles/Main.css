@@ -1,11 +1,18 @@
-@media only screen and (min-device-width: 600px) {
-	body {
-		background-image: url("../Images/BackgroundTexture.jpg");
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		color: white;
-		background-color: black;
+	@media only screen and (min-device-width: 600px) {
+		body {
+			background-image: url("../Images/BackgroundTexture.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			color: white;
+			background-color: black;
+
+		.ux-content iframe {
+			transform: scale(0.7); /* Scale down the iframe on larger screens */
+			transform-origin: top left; /* Keep scaling relative to the top left corner */
+			max-width: none; /* Remove the max-width constraint */
+			max-height: none; /* Remove the max-height constraint */
+		}
 	}
 
 	@keyframes open {
@@ -119,13 +126,13 @@
 
 	.galMenuOpen {
 		animation-iteration-count: 1;
-		animation: open 2s;
+		animation: open .5s;
 		animation-fill-mode: forwards;
 	}
 
 	.galMenuClose {
 		animation-iteration-count: 1;
-		animation: close 2s;
+		animation: close .5s;
 		animation-fill-mode: forwards;
 	}
 
@@ -188,12 +195,49 @@
         align-items: center;
 	}
 
+	.ux {
+		display: none;	
+    	flex-direction: column;	
+		width: 100%;
+        align-items: center;
+	}
+
+	.center-text {
+    	text-align: center;
+    	margin-bottom: 20px;
+	}
+
+	.uxTopDescription {
+		max-width: 80vw;
+		margin-top: -600px;
+	}
+
+	.uxDescription {
+		max-width: 30vw;
+		margin-top: 150px;
+	}
+
+	.ux-content {
+		margin-bottom: 200px;
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: flex-start; 
+    	gap: 5vw; 
+    	max-height: 60vh;
+    	width: auto;
+	}
+
 	#contact{
 		display: none;
 		height: 50vh;
 		padding: 10vw;
 		text-align: center;
 		font-size: 2vw;
+	}
+
+	.ux iframe{
+		margin-right: -10vw;
+		margin-left: 30vw;
 	}
 
 	#bigText {
@@ -203,13 +247,14 @@
 
 
 	#links {
+		line-height: .1;
 		text-align: center;
 		position: fixed;
 		bottom: 0vh;
 		left: 0px;
-		background-color: rgba(0, 0, 0, .7);
+		background-color: rgba(0, 0, 0, .5);
 		width: 100vw;
-		height: 10vh;
+		height: 5vh;
 	}
 }
 @media only screen and (max-device-width: 600px) {
@@ -404,16 +449,5 @@
 	#bigText {
 		font-size: 7vw;
 		font-weight: bold;"
-	}
-
-	#links {
-		text-align: center;
-		position: fixed;
-		bottom: 0vh;
-		left: 0px;
-		background-color: rgba(0, 0, 0, .7);
-		width: 100vw;
-		height: 10vh;
-		font-size: 4vw;
 	}
 }
